@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #edf6f9;
+}
+h1 {
+  color: #006d77;
+  font-family: "Lobster", cursive;
+}
+/* .fa-solid {
+    color: white;
+    background-color: black;
+} */
+.input-box,
+.todo-container {
+  font-size: 1.2rem;
+}
+button {
+  background-color: transparent;
+  border: 0px;
+}
+button:hover {
+  scale: 1.1;
+}
+#add-task {
+  font-size: 2rem;
+  font-family: "Pangolin", cursive;
+  color: #006d77;
+}
+.todo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.todo-container {
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* background-color: #ffc8dd; */
+}
+
+@media (width < 287px) {
+  #add-task {
+    font-size: 1.5rem;
+  }
+}

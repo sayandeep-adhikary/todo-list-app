@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="notes.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>ToDo on the Go!</title>
+  </head>
+
+  <body>
+    <div class="container my-3">
+      <h1 class="text-center display-4">My ToDo</h1>
+    </div>
+
+    <div class="container" id="alert" hidden>
+      <div
+        class="alert alert-success alert-dismissible fade show text-center"
+        role="alert"
+      >
+        <strong>Yay!</strong> New ToDo is added.
+        <button
+          type="button"
+          class="close"
+          data-dismiss="alert"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="container" id="add-task">
+      <p class="text-center">
+        Add a New ToDo
+        <button
+          id="add-btn"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          <i class="fa-solid fa-circle-plus" style="color: #006d77"></i>
+        </button>
+      </p>
+      <div class="collapse input-box" id="collapseExample">
+        <div class="card card-body">
+          <form autocomplete="off">
+            <div class="form-group">
+              <label>Add Text</label>
+              <input type="text" class="form-control" id="task" />
+            </div>
+            <button
+              type="button"
+              class="btn btn-success mr-2"
+              id="submit"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Add
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              id="cancel"
+              data-toggle="collapse"
+              data-target="#collapseExample"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Cancel
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="todo-container my-4 p-3">
+        <!-- <div class="card text-center mb-2" id="div1">
+          <div class="card-body">
+            <p class="card-text" id="p1">
+              With supporting text below as a natural lead-in to additional
+              content.
+            </p>
+            <button id="check1" class="mr-4" onclick="getId(this.id)">
+              <p>Done</p>
+              <i
+                class="fa-solid fa-circle-check fa-lg"
+                style="color: #8ac926"
+              ></i>
+            </button>
+            <button id="delete1" class="ml-4" onclick="getId(this.id)">
+              <p>Delete</p>
+              <i class="fa-solid fa-trash" style="color: #bd0009"></i>
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- the footer -->
+    <!-- <footer class="footer mt-auto py-3">
+      <div class="container">
+        <span class="text-muted">ToDo List Made by Sayandeep Adhikary</span>
+      </div>
+    </footer> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
